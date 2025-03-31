@@ -1,15 +1,14 @@
 {
   "name": "recetas-madrid",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Recetas tradicionales de Madrid",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Juan Crisantos Pérez",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.14.4"
