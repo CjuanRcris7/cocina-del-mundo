@@ -19,7 +19,7 @@ h1 {
     box-shadow: 0 0.3rem 0.3rem rgba(255, 255, 255, 0.3);
 }
 
-.receta {
+.recurso {
     margin: 3rem;
     padding: 3rem;
     background-color: white;
@@ -27,18 +27,18 @@ h1 {
     transition: transform 0.5s ease;
 }
 
-.receta:hover {
+.recurso:hover {
     transform: translateY(-1rem);
 }
 
-.receta img {
+.recurso img {
     width: 100%;
     height: 20rem;
     border-radius: 0.2rem;
     object-fit: cover;
 }
 
-.texto-receta {
+.texto-recurso {
     padding: 1rem;
     text-align: center;
     color: #4c2b3c;
@@ -89,11 +89,11 @@ footer {
     transform: scale(1.2);
 }
 
-.botones-recetas {
+.botones-recursos {
     text-align: center;
 }
 
-.botones-recetas a {
+.botones-recursos a {
     display: inline-block;
     padding: 1.5rem;
     margin: 1rem;
@@ -106,7 +106,7 @@ footer {
     transition: background-color 0.5s, transform 0.5s;
 }
 
-.botones-recetas a:hover {
+.botones-recursos a:hover {
     background-color: #cacaca;
     transform: scale(1.1);
 }
@@ -128,7 +128,7 @@ footer {
         font-size: 1rem;
     }
 
-    .receta {
+    .recurso {
         margin: 1rem;
         padding: 3rem;
         background-color: white;
@@ -136,11 +136,11 @@ footer {
         transition: transform 0.5s ease;
     }
 
-    .receta:hover {
+    .recurso:hover {
         transform: none;
     }
 
-    .botones-recetas a {
+    .botones-recursos a {
         font-size: 1.2rem;
         margin-bottom: 2rem;
     }
