@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.14.4"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }
