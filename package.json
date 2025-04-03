@@ -5,6 +5,7 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
+    "build:css": "postcss src/css/*.css -d dist/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
