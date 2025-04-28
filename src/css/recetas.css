@@ -51,6 +51,12 @@ h1 {
     height: 20rem;
     border-radius: 0.2rem;
     object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    transition: clip-path 0.7s ease;
+}
+
+.receta img:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .texto-receta {

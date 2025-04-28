@@ -88,6 +88,7 @@ iframe {
     width: 100%;
     max-width: 40rem;
     height: 20rem;
+    clip-path: circle(50% at center);
 }
 
 footer {
