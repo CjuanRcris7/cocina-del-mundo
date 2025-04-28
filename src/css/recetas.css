@@ -10,6 +10,20 @@ body {
     background-color: #4c2b3c;
 }
 
+@keyframes appear {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(30px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 h1 {
     font-size: 3rem;
     text-align: center;
@@ -17,6 +31,7 @@ h1 {
     padding-top: 3rem;
     margin-bottom: 4rem;
     box-shadow: 0 0.3rem 0.3rem rgba(255, 255, 255, 0.3);
+    animation: appear 2s ease-out;
 }
 
 .receta {

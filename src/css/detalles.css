@@ -14,8 +14,23 @@ header {
     padding: 2rem 0;
 }
 
+@keyframes appear {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(30px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 h1 {
     font-size: 3rem;
+    animation: appear 2s ease-out;
 }
 
 h2 {
