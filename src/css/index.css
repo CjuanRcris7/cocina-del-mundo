@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Merriweather', serif;
+    background-color: #4c2b3c;
 }
 
 .portada {
@@ -22,6 +23,7 @@ body {
     object-fit: cover;
     background-position: center;
     opacity: 0.8;
+    clip-path: polygon(15% 0, 85% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%);
 }
 
 .botones-portada {
