@@ -17,7 +17,11 @@
 
     <main>
         <section class="imagen-principal">
-            <img src="/src/img/churros.jpg" alt="Foto de 3 churros con azucar por encima">
+            <picture>
+                <source media="(min-width: 601px)" srcset="/src/img/churros.jpg">
+                <source media="(max-width: 600px)" srcset="/src/img/churros-movil.jpg">
+                <img src="/src/img/churros.jpg" alt="churros con azúcar">
+            </picture>
         </section>
 
         <section class="descripcion">

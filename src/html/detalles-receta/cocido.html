@@ -17,7 +17,11 @@
 
     <main>
         <section class="imagen-principal">
-            <img src="/src/img/cocido.jpg" alt="Foto de unos garbanzos">
+            <picture>
+                <source media="(min-width: 601px)" srcset="/src/img/cocido.jpg">
+                <source media="(max-width: 600px)" srcset="/src/img/cocido-movil.jpg">
+                <img src="/src/img/cocido.jpg" alt="Cocido madrileño">
+            </picture>
         </section>
 
         <section class="descripcion">

@@ -17,7 +17,11 @@
 
     <main>
         <section class="imagen-principal">
-            <img src="/src/img/callos.jpg" alt="Foto de plato de callos de cerca">
+            <picture>
+                <source media="(min-width: 601px)" srcset="/src/img/callos.jpg">
+                <source media="(max-width: 600px)" srcset="/src/img/callos-movil.jpg">
+                <img src="/src/img/callos.jpg" alt="callos madrileños">
+            </picture>
         </section>
 
         <section class="descripcion">

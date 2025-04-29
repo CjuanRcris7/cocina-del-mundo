@@ -17,7 +17,11 @@
 
     <main>
         <section class="imagen-principal">
-            <img src="/src/img/sopa.jpg" alt="Foto de una sopa con pan">
+            <picture>
+                <source media="(min-width: 601px)" srcset="/src/img/sopa.jpg">
+                <source media="(max-width: 600px)" srcset="/src/img/sopa-movil.jpg">
+                <img src="/src/img/sopa.jpg" alt="sopa de ajo">
+            </picture>
         </section>
 
         <section class="descripcion">
