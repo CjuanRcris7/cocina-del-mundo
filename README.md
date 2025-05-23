@@ -156,4 +156,29 @@ Los requisitos mínimos alcanzados por el proyecto son:
 - Etiquetas de texto alternativo al contenido audiovisual (videos e imágenes).
 - Uso adecuado de etiquetas HTML.
 - Navegación mediante teclado sin problemas.  
-![Pantallazo del inspector de accesibilidad de Firefox](/src/img/accesibilidad-firefox.png)
+![Pantallazo del inspector de accesibilidad de Firefox](/src/img/accesibilidad-firefox.png)  
+
+# PEC3. Rendimiento web
+### Análisis del tiempo de carga  
+**PRIMER ANÁLISIS**  
+| Métrica               | Valor                                  |
+|-----------------------|----------------------------------------|
+| Título de la página   | Recetas tradicionales de Madrid        |
+| URL                   | https://cocina-del-mundo.netlify.app/  |
+| Tiempo de carga       | 5.09 s                                 |
+| Peso total            | 411.78 kB                              |
+| Peso transferido      | 390.04 kB                              |
+| Nº de recursos        | 7                                      |
+
+
+### Primeros cambios  
+
+### Informe de mejoras  
+
+### Preguntas  
+- **¿Qué cambios detectas en las herramientas para desarrolladores al aplicar lazy loading a las imágenes de tu web? ¿Cómo crees que afecta al rendimiento de tu página?**
+    - respuesta
+- **¿Qué sucede al aplicar carga asíncrona a los scripts de tu página? ¿Qué problemas crees que podrían surgir si cargas el JavaScript de forma asíncrona? Ten en cuenta los diferentes métodos de carga asíncrona para responder esta pregunta.**
+    - respuesta
+- **No hemos hecho carga asíncrona de estilos. ¿Crees que se podría hacer? ¿Qué problemas podríamos tener? Razona tu respuesta.**
+    - respuesta
