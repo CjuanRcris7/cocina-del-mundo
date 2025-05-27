@@ -165,34 +165,34 @@ Por otro lado, la URL de la página corresponde a su versión local, ya que he h
 Después de realizar todos los cambios y subirlos a producción, he añadido una tabla con la información para que se pueda comparar el rendimiento también con su versión publicada en Internet.
 
 **PRIMER ANÁLISIS**  
-| Métrica               | Valor                                    |
-|-----------------------|------------------------------------------|
-| Título de la página   | Recetas tradicionales de Madrid          |
-| URL                   | http://localhost:1234/html/recetas.html  |
-| Tiempo de carga       | 62.01 s                                  |
-| Peso total            | 5.80 MB                                  |
-| Peso transferido      | 5.80 MB                                  |
-| Nº de recursos        | 13                                       |
+| Métrica               | Valor                                              |
+|-----------------------|----------------------------------------------------|
+| Título de la página   | Recetas tradicionales de Madrid                    |
+| URL                   | https://cocina-del-mundo.netlify.app/html/recetas  |
+| Tiempo de carga       | 62.01 s                                            |
+| Peso total            | 5.69 MB                                            |
+| Peso transferido      | 5.69 MB                                            |
+| Nº de recursos        | 11                                                 |
 
 **SEGUNDO ANÁLISIS (todos los recursos)**  
-| Métrica               | Valor                                    |
-|-----------------------|------------------------------------------|
-| Título de la página   | Recetas tradicionales de Madrid          |
-| URL                   | http://localhost:1234/html/recetas.html  |
-| Tiempo de carga       | 26.25 s                                  |
-| Peso total            | 5.80 MB                                  |
-| Peso transferido      | 5.80 MB                                  |
-| Nº de recursos        | 13                                       |
+| Métrica               | Valor                                              |
+|-----------------------|----------------------------------------------------|
+| Título de la página   | Recetas tradicionales de Madrid                    |
+| URL                   | https://cocina-del-mundo.netlify.app/html/recetas  |
+| Tiempo de carga       | 26.25 s                                            |
+| Peso total            | 5.80 MB                                            |
+| Peso transferido      | 5.80 MB                                            |
+| Nº de recursos        | 13                                                 |
 
 **SEGUNDO ANÁLISIS (solo recursos visibles)**  
-| Métrica               | Valor                                    |
-|-----------------------|------------------------------------------|
-| Título de la página   | Recetas tradicionales de Madrid          |
-| URL                   | http://localhost:1234/html/recetas.html  |
-| Tiempo de carga       | 2.60 s                                   |
-| Peso total            | 2.49 MB                                  |
-| Peso transferido      | 2.49 MB                                  |
-| Nº de recursos        | 10                                       |
+| Métrica               | Valor                                              |
+|-----------------------|----------------------------------------------------|
+| Título de la página   | Recetas tradicionales de Madrid                    |
+| URL                   | https://cocina-del-mundo.netlify.app/html/recetas  |
+| Tiempo de carga       | 2.60 s                                             |
+| Peso total            | 2.49 MB                                            |
+| Peso transferido      | 2.49 MB                                            |
+| Nº de recursos        | 10                                                 |
 
 ### Primeros cambios  
 
