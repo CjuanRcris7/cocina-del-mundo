@@ -160,16 +160,39 @@ Los requisitos mínimos alcanzados por el proyecto son:
 
 # PEC3. Rendimiento web
 ### Análisis del tiempo de carga  
-**PRIMER ANÁLISIS**  
-| Métrica               | Valor                                  |
-|-----------------------|----------------------------------------|
-| Título de la página   | Recetas tradicionales de Madrid        |
-| URL                   | https://cocina-del-mundo.netlify.app/  |
-| Tiempo de carga       | 5.09 s                                 |
-| Peso total            | 411.78 kB                              |
-| Peso transferido      | 390.04 kB                              |
-| Nº de recursos        | 7                                      |
+Los análisis los he realizado sobre la página de recetas (recetas.html). Esto es porque esta página tiene un total de 13 recursos que cargar entre los cuales hay 5 imágenes, por lo que los cambios que realice van a ser más evidentes en el rendimiento.  
+Por otro lado, la URL de la página corresponde a su versión local, ya que he hecho todos los cambios en desarrollo antes de pasarlos a producción.  
+Después de realizar todos los cambios y subirlos a producción, he añadido una tabla con la información para que se pueda comparar el rendimiento también con su versión publicada en Internet.
 
+**PRIMER ANÁLISIS**  
+| Métrica               | Valor                                    |
+|-----------------------|------------------------------------------|
+| Título de la página   | Recetas tradicionales de Madrid          |
+| URL                   | http://localhost:1234/html/recetas.html  |
+| Tiempo de carga       | 62.01 s                                  |
+| Peso total            | 5.80 MB                                  |
+| Peso transferido      | 5.80 MB                                  |
+| Nº de recursos        | 13                                       |
+
+**SEGUNDO ANÁLISIS (todos los recursos)**  
+| Métrica               | Valor                                    |
+|-----------------------|------------------------------------------|
+| Título de la página   | Recetas tradicionales de Madrid          |
+| URL                   | http://localhost:1234/html/recetas.html  |
+| Tiempo de carga       | 26.25 s                                  |
+| Peso total            | 5.80 MB                                  |
+| Peso transferido      | 5.80 MB                                  |
+| Nº de recursos        | 13                                       |
+
+**SEGUNDO ANÁLISIS (solo recursos visibles)**  
+| Métrica               | Valor                                    |
+|-----------------------|------------------------------------------|
+| Título de la página   | Recetas tradicionales de Madrid          |
+| URL                   | http://localhost:1234/html/recetas.html  |
+| Tiempo de carga       | 2.60 s                                   |
+| Peso total            | 2.49 MB                                  |
+| Peso transferido      | 2.49 MB                                  |
+| Nº de recursos        | 10                                       |
 
 ### Primeros cambios  
 
