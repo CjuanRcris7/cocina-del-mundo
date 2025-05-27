@@ -179,24 +179,39 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 |-----------------------|----------------------------------------------------|
 | Título de la página   | Recetas tradicionales de Madrid                    |
 | URL                   | https://cocina-del-mundo.netlify.app/html/recetas  |
-| Tiempo de carga       | 26.25 s                                            |
-| Peso total            | 5.80 MB                                            |
-| Peso transferido      | 5.80 MB                                            |
-| Nº de recursos        | 13                                                 |
+| Tiempo de carga       | 23.59 s                                            |
+| Peso total            | 1.13 MB                                            |
+| Peso transferido      | 1.12 MB                                            |
+| Nº de recursos        | 11                                                 |
 
 **SEGUNDO ANÁLISIS (solo recursos visibles)**  
 | Métrica               | Valor                                              |
 |-----------------------|----------------------------------------------------|
 | Título de la página   | Recetas tradicionales de Madrid                    |
 | URL                   | https://cocina-del-mundo.netlify.app/html/recetas  |
-| Tiempo de carga       | 2.60 s                                             |
-| Peso total            | 2.49 MB                                            |
-| Peso transferido      | 2.49 MB                                            |
-| Nº de recursos        | 10                                                 |
+| Tiempo de carga       | 4.67 s                                             |
+| Peso total            | 201.32 kB                                          |
+| Peso transferido      | 198.12 kB                                          |
+| Nº de recursos        | 8                                                  |
 
-### Primeros cambios  
+**TERCER ANÁLISIS**  
+| Métrica               | Análisis 1 | Análisis 2 | Análisis 3 |
+|-----------------------|------------|------------|------------|
+| Tiempo de carga       | 62.01 s    | 23.59 s    |            |
+| Peso total            | 5.69 MB    | 1.13 MB    |            |
+| Peso transferido      | 5.69 MB    | 1.12 MB    |            |
+| Nº de recursos        | 11         | 11         |            |
+
+### Primeros cambios   
 
 ### Informe de mejoras  
+## index.html  
+![informe de mejoras de la página index en formato móvil](/src/img/pagina-index-movil.png)  
+![informe de mejoras de la página index en formato escritorio](/src/img/pagina-index-escritorio.png)  
+**MEJORAS REALIZADAS**
+- Añadir dentro de la etiequeta head 2 links de preconnect con googlefonts para optimizar la velocidad de conexión con esta api a la hora de usar la fuente elegida.
+- Cambiar formato de la imagen de portada de .jpg a .webp.
+- Añadir etiqueta meta dentro del head para describir brevemente la página.
 
 ### Preguntas  
 - **¿Qué cambios detectas en las herramientas para desarrolladores al aplicar lazy loading a las imágenes de tu web? ¿Cómo crees que afecta al rendimiento de tu página?**

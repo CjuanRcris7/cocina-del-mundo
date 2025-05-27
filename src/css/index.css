@@ -99,12 +99,12 @@ p {
 
 @media screen and (min-resolution: 2dppx) {
     .img-fondo {
-        background-image: url('/src/img/fondo-portada.jpg');
+        background-image: url('/src/img/fondo-portada.webp');
     }
 }
 
 @media screen and (max-resolution: 1dppx) {
     .img-fondo {
-        background-image: url('/src/img/fondo-portada-low-resolution.jpg');
+        background-image: url('/src/img/fondo-portada-low-resolution.webp');
     }
 }
