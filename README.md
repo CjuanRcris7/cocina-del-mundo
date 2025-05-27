@@ -211,7 +211,20 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 **MEJORAS REALIZADAS**
 - Añadir dentro de la etiequeta head 2 links de preconnect con googlefonts para optimizar la velocidad de conexión con esta api a la hora de usar la fuente elegida.
 - Cambiar formato de la imagen de portada de .jpg a .webp.
-- Añadir etiqueta meta dentro del head para describir brevemente la página.
+- Añadir etiqueta meta dentro del head para describir brevemente la página.  
+![informe de mejoras de la página index en formato móvil, después de aplicarlas](/src/img/pagina-index-movil-post.png)  
+![informe de mejoras de la página index en formato escritorio, después de aplciarlas](/src/img/pagina-index-escritorio-post.png)  
+
+## recetas.html
+![informe de mejoras de la página recetas en formato móvil](/src/img/pagina-recetas-movil.png)  
+![informe de mejoras de la página recetas en formato escritorio](/src/img/pagina-recetas-escritorio.png)  
+**MEJORAS REALIZADAS**
+- Cambiar formato de la imagen de portada de .jpg a .webp.  
+- Reducir tamaño de las imágenes.  
+- Eliminar loading lazy de la primera imagen que aparece (la primera receta).  
+- Añadir width y height a las etiquetas img de html.
+- Añadir etiqueta meta dentro del head para describir brevemente la página.  
+- Añadir etiqueta print y onload al link de css para que nose bloquee el renderizado de la página
 
 ### Preguntas  
 - **¿Qué cambios detectas en las herramientas para desarrolladores al aplicar lazy loading a las imágenes de tu web? ¿Cómo crees que afecta al rendimiento de tu página?**
