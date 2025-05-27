@@ -224,7 +224,6 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 - Eliminar loading lazy de la primera imagen que aparece (la primera receta).  
 - Añadir width y height a las etiquetas img de html.
 - Añadir etiqueta meta dentro del head para describir brevemente la página.  
-- Añadir etiqueta print y onload al link de css para que nose bloquee el renderizado de la página
 
 ### Preguntas  
 - **¿Qué cambios detectas en las herramientas para desarrolladores al aplicar lazy loading a las imágenes de tu web? ¿Cómo crees que afecta al rendimiento de tu página?**
