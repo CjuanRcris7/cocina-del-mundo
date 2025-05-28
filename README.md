@@ -197,10 +197,10 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 **TERCER ANÁLISIS (métricas comparativas)**  
 | Métrica               | Análisis 1 | Análisis 2 | Análisis 3 |
 |-----------------------|------------|------------|------------|
-| Tiempo de carga       | 62.01 s    | 23.59 s    |            |
-| Peso total            | 5.69 MB    | 1.13 MB    |            |
-| Peso transferido      | 5.69 MB    | 1.12 MB    |            |
-| Nº de recursos        | 11         | 11         |            |
+| Tiempo de carga       | 62.01 s    | 23.59 s    | 6.47 s     |
+| Peso total            | 5.69 MB    | 1.13 MB    | 656.26 kB  |
+| Peso transferido      | 5.69 MB    | 1.12 MB    | 651.41 kB  |
+| Nº de recursos        | 11         | 11         | 11         |
 
 ### Primeros cambios   
 
@@ -208,7 +208,7 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 ## index.html  
 ![informe de mejoras de la página index en formato móvil](/src/img/pagina-index-movil.png)  
 ![informe de mejoras de la página index en formato escritorio](/src/img/pagina-index-escritorio.png)  
-**MEJORAS REALIZADAS**
+**MEJORAS REALIZADAS**  
 - Añadir dentro de la etiequeta head 2 links de preconnect con googlefonts para optimizar la velocidad de conexión con esta api a la hora de usar la fuente elegida.
 - Cambiar formato de la imagen de portada de .jpg a .webp.
 - Añadir etiqueta meta dentro del head para describir brevemente la página.  
@@ -218,7 +218,7 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 ## recetas.html
 ![informe de mejoras de la página recetas en formato móvil](/src/img/pagina-recetas-movil.png)  
 ![informe de mejoras de la página recetas en formato escritorio](/src/img/pagina-recetas-escritorio.png)  
-**MEJORAS REALIZADAS**
+**MEJORAS REALIZADAS**  
 - Cambiar formato de la imagen de portada de .jpg a .webp.  
 - Reducir tamaño de las imágenes.  
 - Eliminar loading lazy de la primera imagen que aparece (la primera receta).  
@@ -228,6 +228,16 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 ![informe de mejoras de la página recetas en formato escritorio, después de aplicarlas](/src/img/pagina-recetas-escritorio-post.png)  
 
 ## recursos.html
+![informe de mejoras de la página recursos en formato móvil](/src/img/pagina-recursos-movil.png)  
+![informe de mejoras de la página recursos en formato escritorio](/src/img/pagina-recursos-escritorio.png)  
+**MEJORAS REALIZADAS**  
+- Cambiar formato de la imagen de portada de .jpg a .webp.  
+- Reducir tamaño de las imágenes.  
+- Eliminar loading lazy de la primera imagen que aparece (el primer recurso).  
+- Añadir width y height a las etiquetas img de html.  
+- Añadir etiqueta meta dentro del head para describir brevemente la página.  
+![informe de mejoras de la página recursos en formato móvil, después de aplicarlas](/src/img/pagina)  
+![informe de mejoras de la página recursos en formato escritorio, después de aplicarlas](/src/img/pagina)  
 
 ## detalles-receta
 Las 4 páginas de detalles de cada receta (cocido.html, sopa.html, callos.html y churros.html) tienen una sugerencias de mejora similares, por lo que he realizado los mismos cambios en todas ellas.
@@ -262,7 +272,9 @@ He adjuntado fotos del análisis de cada página para que se vea el cambio indiv
 **callos.html después de aplicar mejoras**  
 ![informe de mejoras de la página callos en formato móvil, después de aplicarlas](/src/img/pagina-callos-movil-post.png)  
 ![informe de mejoras de la página callos en formato escritorio, después de aplicarlas](/src/img/pagina-callos-escritorio-post.png)  
-------------------------------------------
+------------------------------------------  
+
+## Comparativa y análisis de las mejoras
 
 **churros.html antes de aplicar mejoras**  
 ![informe de mejoras de la página churros en formato móvil](/src/img/pagina-churros-movil.png)  
