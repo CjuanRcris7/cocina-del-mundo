@@ -236,7 +236,9 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 - Añadir width y height a las etiquetas img de html.  
 - Añadir font-display swap en el css
 - Añadir passive:true al evento de scroll del JavaScript
-- Cambiar iframe para evitar cookies de YouTube
+- Cambiar iframe para evitar cookies de YouTube  
+![informe de mejoras de la página cocido en formato móvil, después de aplicarlas](/src/img/pagina-cocido-movil-post.png)  
+![informe de mejoras de la página cocido en formato escritorio, después de aplicarlas](/src/img/pagina-cocido-escritorio-post.png)  
 
 ## sopa.html
 ## callos.html
