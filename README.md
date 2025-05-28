@@ -227,6 +227,8 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 ![informe de mejoras de la página recetas en formato móvil, después de aplicarlas](/src/img/pagina-recetas-movil-post.png)  
 ![informe de mejoras de la página recetas en formato escritorio, después de aplicarlas](/src/img/pagina-recetas-escritorio-post.png)  
 
+## recursos.html
+
 ## cocido.html
 ![informe de mejoras de la página cocido en formato móvil](/src/img/pagina-cocido-movil.png)  
 ![informe de mejoras de la página cocido en formato escritorio](/src/img/pagina-cocido-escritorio.png)  
@@ -241,9 +243,16 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 ![informe de mejoras de la página cocido en formato escritorio, después de aplicarlas](/src/img/pagina-cocido-escritorio-post.png)  
 
 ## sopa.html
+![informe de mejoras de la página sopa en formato móvil](/src/img/pagina-sopa-movil.png)  
+![informe de mejoras de la página sopa en formato escritorio](/src/img/pagina-sopa-escritorio.png)  
+
 ## callos.html
+![informe de mejoras de la página callos en formato móvil](/src/img/pagina-callos-movil.png)  
+![informe de mejoras de la página callos en formato escritorio](/src/img/pagina-callos-escritorio.png)  
+
 ## churros.html
-## recursos.html
+![informe de mejoras de la página churros en formato móvil](/src/img/pagina-churros-movil.png)  
+![informe de mejoras de la página churros en formato escritorio](/src/img/pagina-churros-escritorio.png)  
 
 ### Preguntas  
 - **¿Qué cambios detectas en las herramientas para desarrolladores al aplicar lazy loading a las imágenes de tu web? ¿Cómo crees que afecta al rendimiento de tu página?**
