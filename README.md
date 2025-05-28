@@ -202,7 +202,7 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 | Peso transferido      | 5.69 MB    | 1.12 MB    | 651.41 kB  |
 | Nº de recursos        | 11         | 11         | 11         |
 
-### Primeros cambios   
+### Primeros cambios  
 
 ### Informe de mejoras  
 ## index.html  
@@ -236,8 +236,8 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 - Eliminar loading lazy de la primera imagen que aparece (el primer recurso).  
 - Añadir width y height a las etiquetas img de html.  
 - Añadir etiqueta meta dentro del head para describir brevemente la página.  
-![informe de mejoras de la página recursos en formato móvil, después de aplicarlas](/src/img/pagina)  
-![informe de mejoras de la página recursos en formato escritorio, después de aplicarlas](/src/img/pagina)  
+![informe de mejoras de la página recursos en formato móvil, después de aplicarlas](/src/img/pagina-recursos-movil-post.png)  
+![informe de mejoras de la página recursos en formato escritorio, después de aplicarlas](/src/img/pagina-recursos-escritorio-post.png)  
 
 ## detalles-receta
 Las 4 páginas de detalles de cada receta (cocido.html, sopa.html, callos.html y churros.html) tienen una sugerencias de mejora similares, por lo que he realizado los mismos cambios en todas ellas.
