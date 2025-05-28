@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Merriweather', serif;
+    font-display: swap;
     color: #4c2b3c;
 }
 
@@ -42,8 +43,6 @@ p {
 }
 
 .imagen-principal img {
-    width: 100%;
-    max-height: 20rem;
     object-fit: cover;
     display: block;
 }

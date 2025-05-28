@@ -194,7 +194,7 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 | Peso transferido      | 198.12 kB                                          |
 | Nº de recursos        | 8                                                  |
 
-**TERCER ANÁLISIS**  
+**TERCER ANÁLISIS (métricas comparativas)**  
 | Métrica               | Análisis 1 | Análisis 2 | Análisis 3 |
 |-----------------------|------------|------------|------------|
 | Tiempo de carga       | 62.01 s    | 23.59 s    |            |
@@ -222,8 +222,26 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 - Cambiar formato de la imagen de portada de .jpg a .webp.  
 - Reducir tamaño de las imágenes.  
 - Eliminar loading lazy de la primera imagen que aparece (la primera receta).  
-- Añadir width y height a las etiquetas img de html.
+- Añadir width y height a las etiquetas img de html.  
 - Añadir etiqueta meta dentro del head para describir brevemente la página.  
+![informe de mejoras de la página recetas en formato móvil, después de aplicarlas](/src/img/pagina-recetas-movil-post.png)  
+![informe de mejoras de la página recetas en formato escritorio, después de aplicarlas](/src/img/pagina-recetas-escritorio-post.png)  
+
+## cocido.html
+![informe de mejoras de la página cocido en formato móvil](/src/img/pagina-cocido-movil.png)  
+![informe de mejoras de la página cocido en formato escritorio](/src/img/pagina-cocido-escritorio.png)  
+**MEJORAS REALIZADAS**  
+- Cambiar formato de la imagen de portada de .jpg a .webp.  
+- Reducir tamaño de las imágenes.  
+- Añadir width y height a las etiquetas img de html.  
+- Añadir font-display swap en el css
+- Añadir passive:true al evento de scroll del JavaScript
+- Cambiar iframe para evitar cookies de YouTube
+
+## sopa.html
+## callos.html
+## churros.html
+## recursos.html
 
 ### Preguntas  
 - **¿Qué cambios detectas en las herramientas para desarrolladores al aplicar lazy loading a las imágenes de tu web? ¿Cómo crees que afecta al rendimiento de tu página?**
