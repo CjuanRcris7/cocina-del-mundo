@@ -229,30 +229,47 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 
 ## recursos.html
 
-## cocido.html
-![informe de mejoras de la página cocido en formato móvil](/src/img/pagina-cocido-movil.png)  
-![informe de mejoras de la página cocido en formato escritorio](/src/img/pagina-cocido-escritorio.png)  
-**MEJORAS REALIZADAS**  
+## detalles-receta
+Las 4 páginas de detalles de cada receta (cocido.html, sopa.html, callos.html y churros.html) tienen una sugerencias de mejora similares, por lo que he realizado los mismos cambios en todas ellas.
+Los cambios realizados han sido los siguientes:  
 - Cambiar formato de la imagen de portada de .jpg a .webp.  
 - Reducir tamaño de las imágenes.  
 - Añadir width y height a las etiquetas img de html.  
 - Añadir font-display swap en el css
 - Añadir passive:true al evento de scroll del JavaScript
 - Cambiar iframe para evitar cookies de YouTube  
+He adjuntado fotos del análisis de cada página para que se vea el cambio individual.
+
+**cocido.html antes de aplicar mejoras**  
+![informe de mejoras de la página cocido en formato móvil](/src/img/pagina-cocido-movil.png)  
+![informe de mejoras de la página cocido en formato escritorio](/src/img/pagina-cocido-escritorio.png)  
+**cocido.html después de aplicar mejoras**  
 ![informe de mejoras de la página cocido en formato móvil, después de aplicarlas](/src/img/pagina-cocido-movil-post.png)  
 ![informe de mejoras de la página cocido en formato escritorio, después de aplicarlas](/src/img/pagina-cocido-escritorio-post.png)  
+------------------------------------------
 
-## sopa.html
+**sopa.html antes de aplicar mejoras**  
 ![informe de mejoras de la página sopa en formato móvil](/src/img/pagina-sopa-movil.png)  
 ![informe de mejoras de la página sopa en formato escritorio](/src/img/pagina-sopa-escritorio.png)  
+**cocido.html después de aplicar mejoras**  
+![informe de mejoras de la página sopa en formato móvil, después de aplicarlas](/src/img/pagina-sopa-movil-post.png)  
+![informe de mejoras de la página sopa en formato escritorio, después de aplicarlas](/src/img/pagina-sopa-escritorio-post.png)  
+------------------------------------------
 
-## callos.html
+**callos.html antes de aplicar mejoras**  
 ![informe de mejoras de la página callos en formato móvil](/src/img/pagina-callos-movil.png)  
 ![informe de mejoras de la página callos en formato escritorio](/src/img/pagina-callos-escritorio.png)  
+**callos.html después de aplicar mejoras**  
+![informe de mejoras de la página callos en formato móvil, después de aplicarlas](/src/img/pagina-callos-movil-post.png)  
+![informe de mejoras de la página callos en formato escritorio, después de aplicarlas](/src/img/pagina-callos-escritorio-post.png)  
+------------------------------------------
 
-## churros.html
+**churros.html antes de aplicar mejoras**  
 ![informe de mejoras de la página churros en formato móvil](/src/img/pagina-churros-movil.png)  
 ![informe de mejoras de la página churros en formato escritorio](/src/img/pagina-churros-escritorio.png)  
+**churros.html después de aplicar mejoras**  
+![informe de mejoras de la página churros en formato móvil, después de aplicarlas](/src/img/pagina-churros-movil-post.png)  
+![informe de mejoras de la página churros en formato escritorio, después de aplicarlas](/src/img/pagina-churros-escritorio-post.png)  
 
 ### Preguntas  
 - **¿Qué cambios detectas en las herramientas para desarrolladores al aplicar lazy loading a las imágenes de tu web? ¿Cómo crees que afecta al rendimiento de tu página?**
