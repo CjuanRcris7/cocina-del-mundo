@@ -161,8 +161,8 @@ Los requisitos mínimos alcanzados por el proyecto son:
 # PEC3. Rendimiento web
 ### Análisis del tiempo de carga  
 Los análisis los he realizado sobre la página de recetas (recetas.html). Esto es porque esta página tiene un total de 13 recursos que cargar entre los cuales hay 5 imágenes, por lo que los cambios que realice van a ser más evidentes en el rendimiento.  
-Por otro lado, la URL de la página corresponde a su versión local, ya que he hecho todos los cambios en desarrollo antes de pasarlos a producción.  
-Después de realizar todos los cambios y subirlos a producción, he añadido una tabla con la información para que se pueda comparar el rendimiento también con su versión publicada en Internet.
+Todos los análisis se han realizado con la caché desactivada y con la opción de regular 3G seleccionada:
+![aplicación de filtros de de cache y 3G para comprobar tiempo de carga](/src/img/regular-3g.png)  
 
 **PRIMER ANÁLISIS**  
 | Métrica               | Valor                                              |
@@ -202,7 +202,15 @@ Después de realizar todos los cambios y subirlos a producción, he añadido una
 | Peso transferido      | 5.69 MB    | 1.12 MB    | 651.41 kB  |
 | Nº de recursos        | 11         | 11         | 11         |
 
+**ANÁLISIS DE LOS RESULTADOS**  
+La optimización ha ocurrido de manera progresiva hasta llegar a una mejora notable en el rendimiento de la página. En el primer análisis, la carga completa de los recursos tardaba más de 1 minuto y el peso total de los archivos hacía un total de 5.69MB, lo que hacía que la experiencia fuese lenta y poco eficiente. Tras realizar unos primeros cambios (aplicando la técnica de lazy loading a las imágenes), ya se observaron cambios notables en el rendimiento, reduciéndose el tiempo de carga a 23.59 segundos y el peso total a 1.13MB. Por último, se aplicaron otros cambios (principalmente cambio de formato de imágenes de png y jpg a webp y reducción del tamaño)  que redujeron el tiempo de carga a solamente 6.47 segundos y el peso total a 656kB. Estos datos demuestran que pequeños cambios en el código de la aplicación pueden mejorar mucho el rendimiento de la página y la experiencia de usuario.  
+
 ### Primeros cambios  
+Los dos primeros cambios que realicé para el segundo análisis de rendimiento de la aplicación fueron:
+- Aplicación de lazy loading a las imágenes para evitar cargar todas las imágenes de golpe, y cargarlas cuando se vayan visualizando en la pantalla.  
+![Aplicación de lazy loading en el código](/src/img/loading-lazy.png)
+- Aplicación del atributo defer al script para descargarlo de forma asíncrona al mismo tiempo que el código html y ejecutarlo justo después de que cargue el DOM (solamente en las páginas detalladas de cada receta, ya que mi aplicación no consta de más scripts).  
+![Aplicación de atributo defer en el código](/src/img/defer.png)
 
 ### Informe de mejoras  
 ## index.html  
@@ -285,8 +293,15 @@ He adjuntado fotos del análisis de cada página para que se vea el cambio indiv
 
 ### Preguntas  
 - **¿Qué cambios detectas en las herramientas para desarrolladores al aplicar lazy loading a las imágenes de tu web? ¿Cómo crees que afecta al rendimiento de tu página?**
-    - respuesta
+    - En la pestaña "network", solo se descargan las imágenes que están en la parte visible, mientras que el resto se irán descargando a medida que el usuario hace "scroll" en la página. Esto mejora la velocidad de carga inicial ya que se reduce la cantidad de elementos necesarios a cargar.
 - **¿Qué sucede al aplicar carga asíncrona a los scripts de tu página? ¿Qué problemas crees que podrían surgir si cargas el JavaScript de forma asíncrona? Ten en cuenta los diferentes métodos de carga asíncrona para responder esta pregunta.**
-    - respuesta
+    - Al cargar los scripts asíncronamente se mejora el rendimiento de la página porque no se bloquea el HTML para cargar el código JS, sino que todo ocurre al mismo tiempo.
+    - Existen dos maneras principales de cargar los scripts de forma asícrona:
+        - Por un lado está el uso de defer, que permite que el script se vaya descargando a la vez que el html, y se ejecuta una vez que todo el DOM está totalmente construido (similar a ejecutarlo después del eveneto DOMContentLoaded).
+        - Por otro lado, está el uso de async, que también permite la descarga del script a la vez que el html, pero con la diferencia de que este se ejecuta en cuanto está descargado (sin esperar necesariamente a que el DOM esté totalmente construido). En este caso, sí que pueden surgir problemas debido a que hay acciones que dependen de que el DOM esté cargado del todo y, de no ser así, ocurrirúa un error durante la ejecución del script.
 - **No hemos hecho carga asíncrona de estilos. ¿Crees que se podría hacer? ¿Qué problemas podríamos tener? Razona tu respuesta.**
-    - respuesta
+    - Técnicamente sí se pueden cargar de manera asíncrona los estilos, modificabndo la siguiente línea de código:  
+    ```
+    <link rel="stylesheet" href="/src/css/recetas.css" media="print" onload="this.media='all'">
+    ```  
+    - El principal problema que nos podemos encontrar al cargar los estilos de manera asíncrona es que al cargar la página se muestre el contenido sin css hasta que termine de cargarse.  Además de esto, en caso de aplicar varios css a un archivo html, la carga asíncrona puede afectar a la especificidad de los elementos y clases css.  
