@@ -217,9 +217,9 @@ Los dos primeros cambios que realicé para el segundo análisis de rendimiento d
 ![informe de mejoras de la página index en formato móvil](/src/img/pagina-index-movil.png)  
 ![informe de mejoras de la página index en formato escritorio](/src/img/pagina-index-escritorio.png)  
 **MEJORAS REALIZADAS**  
-- Añadir dentro de la etiequeta head 2 links de preconnect con googlefonts para optimizar la velocidad de conexión con esta api a la hora de usar la fuente elegida.  
-- Cambiar formato de la imagen de portada de .jpg a .webp. ya que es un formato optimizado para páginas web.  
-- Añadir etiqueta meta dentro del head para describir brevemente la página y mejorar la optimización para kotores de búsqueda (SEO).  
+- Añadir dentro de la etiqueta head 2 links de preconnect con google fonts para optimizar la velocidad de conexión con esta api a la hora de usar la fuente elegida.  
+- Cambiar el formato de la imagen de portada de .jpg a .webp. ya que es un formato optimizado para páginas web.  
+- Añadir etiqueta meta dentro del head para describir brevemente la página y mejorar la optimización para motores de búsqueda (SEO).  
 ![informe de mejoras de la página index en formato móvil, después de aplicarlas](/src/img/pagina-index-movil-post.png)  
 ![informe de mejoras de la página index en formato escritorio, después de aplciarlas](/src/img/pagina-index-escritorio-post.png)  
 
@@ -227,11 +227,11 @@ Los dos primeros cambios que realicé para el segundo análisis de rendimiento d
 ![informe de mejoras de la página recetas en formato móvil](/src/img/pagina-recetas-movil.png)  
 ![informe de mejoras de la página recetas en formato escritorio](/src/img/pagina-recetas-escritorio.png)  
 **MEJORAS REALIZADAS**  
-- Cambiar formato de la imagen de portada de .jpg a .webp. ya que es un formato optimizado para páginas web.
+- Cambiar el formato de la imagen de portada de .jpg a .webp. ya que es un formato optimizado para páginas web.
 - Reducir tamaño de las imágenes.  
 - Eliminar loading lazy de la primera imagen que aparece (la primera receta) para que cargue desde el principio.  
 - Añadir width y height a las etiquetas img de html para evitar que se tenga que cargar el css para conocer las dimensiones de las imágenes.  
-- Añadir etiqueta meta dentro del head para describir brevemente la página y mejorar la optimización para kotores de búsqueda (SEO).  
+- Añadir etiqueta meta dentro del head para describir brevemente la página y mejorar la optimización para motores de búsqueda (SEO).  
 ![informe de mejoras de la página recetas en formato móvil, después de aplicarlas](/src/img/pagina-recetas-movil-post.png)  
 ![informe de mejoras de la página recetas en formato escritorio, después de aplicarlas](/src/img/pagina-recetas-escritorio-post.png)  
 
@@ -239,7 +239,7 @@ Los dos primeros cambios que realicé para el segundo análisis de rendimiento d
 ![informe de mejoras de la página recursos en formato móvil](/src/img/pagina-recursos-movil.png)  
 ![informe de mejoras de la página recursos en formato escritorio](/src/img/pagina-recursos-escritorio.png)  
 **MEJORAS REALIZADAS**  
-- Cambiar formato de la imagen de portada de .jpg a .webp.  
+- Cambiar el formato de la imagen de portada de .jpg a .webp.  
 - Reducir tamaño de las imágenes, con lo que la cantidad de datos que se tienen que cargar es mucho menor y lo hace más rápido.  
 - Eliminar loading lazy de la primera imagen que aparece (el primer recurso) para que cargue desde el principio.  
 - Añadir width y height a las etiquetas img de html.  
@@ -250,7 +250,7 @@ Los dos primeros cambios que realicé para el segundo análisis de rendimiento d
 ## detalles-receta
 Las 4 páginas de detalles de cada receta (cocido.html, sopa.html, callos.html y churros.html) tienen una sugerencias de mejora similares, por lo que he realizado los mismos cambios en todas ellas.
 Los cambios realizados han sido los siguientes:  
-- Cambiar formato de la imagen de portada de .jpg a .webp.  
+- Cambiar el formato de la imagen de portada de .jpg a .webp.  
 - Reducir tamaño de las imágenes.  
 - Añadir width y height a las etiquetas img de html.  
 - Añadir font-display swap en el css para que el texto se muestre siempre (al principio con la fuente predeterminada hasta que carga la fuente descargada).  
@@ -269,7 +269,7 @@ He adjuntado fotos del análisis de cada página para que se vea el cambio indiv
 **sopa.html antes de aplicar mejoras**  
 ![informe de mejoras de la página sopa en formato móvil](/src/img/pagina-sopa-movil.png)  
 ![informe de mejoras de la página sopa en formato escritorio](/src/img/pagina-sopa-escritorio.png)  
-**cocido.html después de aplicar mejoras**  
+**sopa.html después de aplicar mejoras**  
 ![informe de mejoras de la página sopa en formato móvil, después de aplicarlas](/src/img/pagina-sopa-movil-post.png)  
 ![informe de mejoras de la página sopa en formato escritorio, después de aplicarlas](/src/img/pagina-sopa-escritorio-post.png)  
 ------------------------------------------
@@ -294,11 +294,11 @@ He adjuntado fotos del análisis de cada página para que se vea el cambio indiv
     - En la pestaña "network", solo se descargan las imágenes que están en la parte visible, mientras que el resto se irán descargando a medida que el usuario hace "scroll" en la página. Esto mejora la velocidad de carga inicial ya que se reduce la cantidad de elementos necesarios a cargar.
 - **¿Qué sucede al aplicar carga asíncrona a los scripts de tu página? ¿Qué problemas crees que podrían surgir si cargas el JavaScript de forma asíncrona? Ten en cuenta los diferentes métodos de carga asíncrona para responder esta pregunta.**
     - Al cargar los scripts asíncronamente se mejora el rendimiento de la página porque no se bloquea el HTML para cargar el código JS, sino que todo ocurre al mismo tiempo.
-    - Existen dos maneras principales de cargar los scripts de forma asícrona:
-        - Por un lado está el uso de defer, que permite que el script se vaya descargando a la vez que el html, y se ejecuta una vez que todo el DOM está totalmente construido (similar a ejecutarlo después del eveneto DOMContentLoaded).
-        - Por otro lado, está el uso de async, que también permite la descarga del script a la vez que el html, pero con la diferencia de que este se ejecuta en cuanto está descargado (sin esperar necesariamente a que el DOM esté totalmente construido). En este caso, sí que pueden surgir problemas debido a que hay acciones que dependen de que el DOM esté cargado del todo y, de no ser así, ocurrirúa un error durante la ejecución del script.
+    - Existen dos maneras principales de cargar los scripts de forma asíncrona:
+        - Por un lado está el uso de defer, que permite que el script se vaya descargando a la vez que el html, y se ejecuta una vez que todo el DOM está totalmente construido (similar a ejecutarlo después del evento DOMContentLoaded).
+        - Por otro lado, está el uso de async, que también permite la descarga del script a la vez que el html, pero con la diferencia de que este se ejecuta en cuanto está descargado (sin esperar necesariamente a que el DOM esté totalmente construido). En este caso, sí que pueden surgir problemas debido a que hay acciones que dependen de que el DOM esté cargado del todo y, de no ser así, ocurriría un error durante la ejecución del script.
 - **No hemos hecho carga asíncrona de estilos. ¿Crees que se podría hacer? ¿Qué problemas podríamos tener? Razona tu respuesta.**
-    - Técnicamente sí se pueden cargar de manera asíncrona los estilos, modificabndo la siguiente línea de código:  
+    - Técnicamente sí se pueden cargar de manera asíncrona los estilos, modificando la siguiente línea de código:  
     ```
     <link rel="stylesheet" href="/src/css/recetas.css" media="print" onload="this.media='all'">
     ```  
