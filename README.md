@@ -203,7 +203,7 @@ Todos los análisis se han realizado con la caché desactivada y con la opción 
 | Nº de recursos        | 11         | 11         | 11         |
 
 **ANÁLISIS DE LOS RESULTADOS**  
-La optimización ha ocurrido de manera progresiva hasta llegar a una mejora notable en el rendimiento de la página. En el primer análisis, la carga completa de los recursos tardaba más de 1 minuto y el peso total de los archivos hacía un total de 5.69MB, lo que hacía que la experiencia fuese lenta y poco eficiente. Tras realizar unos primeros cambios (aplicando la técnica de lazy loading a las imágenes), ya se observaron cambios notables en el rendimiento, reduciéndose el tiempo de carga a 23.59 segundos y el peso total a 1.13MB. Por último, se aplicaron otros cambios (principalmente cambio de formato de imágenes de png y jpg a webp y reducción del tamaño)  que redujeron el tiempo de carga a solamente 6.47 segundos y el peso total a 656kB. Estos datos demuestran que pequeños cambios en el código de la aplicación pueden mejorar mucho el rendimiento de la página y la experiencia de usuario.  
+La optimización ha ocurrido de manera progresiva hasta llegar a una mejora notable en el rendimiento de la página. En el primer análisis, la carga completa de los recursos tardaba más de 1 minuto y el peso total de los archivos era de 5.69MB, lo que hacía que la experiencia para el usuario fuese lenta y poco eficiente. Tras realizar unos primeros cambios (aplicando la técnica de lazy loading a las imágenes), ya se observaron cambios notables en el rendimiento, reduciéndose el tiempo de carga a 23.59 segundos y el peso total a 1.13MB. Por último, se aplicaron otros cambios (principalmente cambio de formato de imágenes de png y jpg a webp y reducción del tamaño)  que redujeron el tiempo de carga a solamente 6.47 segundos y el peso total a 656kB. Estos datos demuestran que pequeños cambios en el código de la aplicación y en la optimización de las imágenes pueden mejorar mucho el rendimiento de la página y la experiencia de usuario.  
 
 ### Primeros cambios  
 Los dos primeros cambios que realicé para el segundo análisis de rendimiento de la aplicación fueron:
@@ -217,9 +217,9 @@ Los dos primeros cambios que realicé para el segundo análisis de rendimiento d
 ![informe de mejoras de la página index en formato móvil](/src/img/pagina-index-movil.png)  
 ![informe de mejoras de la página index en formato escritorio](/src/img/pagina-index-escritorio.png)  
 **MEJORAS REALIZADAS**  
-- Añadir dentro de la etiequeta head 2 links de preconnect con googlefonts para optimizar la velocidad de conexión con esta api a la hora de usar la fuente elegida.
-- Cambiar formato de la imagen de portada de .jpg a .webp.
-- Añadir etiqueta meta dentro del head para describir brevemente la página.  
+- Añadir dentro de la etiequeta head 2 links de preconnect con googlefonts para optimizar la velocidad de conexión con esta api a la hora de usar la fuente elegida.  
+- Cambiar formato de la imagen de portada de .jpg a .webp. ya que es un formato optimizado para páginas web.  
+- Añadir etiqueta meta dentro del head para describir brevemente la página y mejorar la optimización para kotores de búsqueda (SEO).  
 ![informe de mejoras de la página index en formato móvil, después de aplicarlas](/src/img/pagina-index-movil-post.png)  
 ![informe de mejoras de la página index en formato escritorio, después de aplciarlas](/src/img/pagina-index-escritorio-post.png)  
 
@@ -227,11 +227,11 @@ Los dos primeros cambios que realicé para el segundo análisis de rendimiento d
 ![informe de mejoras de la página recetas en formato móvil](/src/img/pagina-recetas-movil.png)  
 ![informe de mejoras de la página recetas en formato escritorio](/src/img/pagina-recetas-escritorio.png)  
 **MEJORAS REALIZADAS**  
-- Cambiar formato de la imagen de portada de .jpg a .webp.  
+- Cambiar formato de la imagen de portada de .jpg a .webp. ya que es un formato optimizado para páginas web.
 - Reducir tamaño de las imágenes.  
-- Eliminar loading lazy de la primera imagen que aparece (la primera receta).  
-- Añadir width y height a las etiquetas img de html.  
-- Añadir etiqueta meta dentro del head para describir brevemente la página.  
+- Eliminar loading lazy de la primera imagen que aparece (la primera receta) para que cargue desde el principio.  
+- Añadir width y height a las etiquetas img de html para evitar que se tenga que cargar el css para conocer las dimensiones de las imágenes.  
+- Añadir etiqueta meta dentro del head para describir brevemente la página y mejorar la optimización para kotores de búsqueda (SEO).  
 ![informe de mejoras de la página recetas en formato móvil, después de aplicarlas](/src/img/pagina-recetas-movil-post.png)  
 ![informe de mejoras de la página recetas en formato escritorio, después de aplicarlas](/src/img/pagina-recetas-escritorio-post.png)  
 
@@ -240,8 +240,8 @@ Los dos primeros cambios que realicé para el segundo análisis de rendimiento d
 ![informe de mejoras de la página recursos en formato escritorio](/src/img/pagina-recursos-escritorio.png)  
 **MEJORAS REALIZADAS**  
 - Cambiar formato de la imagen de portada de .jpg a .webp.  
-- Reducir tamaño de las imágenes.  
-- Eliminar loading lazy de la primera imagen que aparece (el primer recurso).  
+- Reducir tamaño de las imágenes, con lo que la cantidad de datos que se tienen que cargar es mucho menor y lo hace más rápido.  
+- Eliminar loading lazy de la primera imagen que aparece (el primer recurso) para que cargue desde el principio.  
 - Añadir width y height a las etiquetas img de html.  
 - Añadir etiqueta meta dentro del head para describir brevemente la página.  
 ![informe de mejoras de la página recursos en formato móvil, después de aplicarlas](/src/img/pagina-recursos-movil-post.png)  
@@ -253,9 +253,9 @@ Los cambios realizados han sido los siguientes:
 - Cambiar formato de la imagen de portada de .jpg a .webp.  
 - Reducir tamaño de las imágenes.  
 - Añadir width y height a las etiquetas img de html.  
-- Añadir font-display swap en el css
-- Añadir passive:true al evento de scroll del JavaScript
-- Cambiar iframe para evitar cookies de YouTube  
+- Añadir font-display swap en el css para que el texto se muestre siempre (al principio con la fuente predeterminada hasta que carga la fuente descargada).  
+- Añadir passive:true al evento de scroll del JavaScript para hacerlo más fluido, sin interrupciones por otro tipo de evento de JavaScript.  
+- Cambiar iframe para evitar cookies de YouTube.  
 He adjuntado fotos del análisis de cada página para que se vea el cambio individual.
 
 **cocido.html antes de aplicar mejoras**  
@@ -281,8 +281,6 @@ He adjuntado fotos del análisis de cada página para que se vea el cambio indiv
 ![informe de mejoras de la página callos en formato móvil, después de aplicarlas](/src/img/pagina-callos-movil-post.png)  
 ![informe de mejoras de la página callos en formato escritorio, después de aplicarlas](/src/img/pagina-callos-escritorio-post.png)  
 ------------------------------------------  
-
-## Comparativa y análisis de las mejoras
 
 **churros.html antes de aplicar mejoras**  
 ![informe de mejoras de la página churros en formato móvil](/src/img/pagina-churros-movil.png)  
